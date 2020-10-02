@@ -16,6 +16,7 @@ jobs:
     - name: Cache Yarn Deps
       uses: c-hive/gha-yarn-cache@v1
 
+    - run: yarn install
     - run: yarn prettier:write
 
     - name: Commit changes
