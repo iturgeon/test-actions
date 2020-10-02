@@ -1,0 +1,11 @@
+{
+  "name": "test-actions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/iturgeon/test-actions.git",
+  "author": "iturgeon <iturgeon@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^2.1.2"
+  }
+}
