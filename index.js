@@ -6,4 +6,4 @@ if (x() * 2 > 99) {
 
 console.log("yeeeeeeeeeeeeeeeeee");
 
-					const  t =    5
+const t = 5;
