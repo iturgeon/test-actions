@@ -5,6 +5,9 @@
   "repository": "https://github.com/iturgeon/test-actions.git",
   "author": "iturgeon <iturgeon@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "prettier:write": "prettier --write '**/*.{js,scss}'"
+  },
   "dependencies": {
     "prettier": "^2.1.2"
   }
