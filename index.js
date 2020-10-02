@@ -5,3 +5,5 @@ const x = (test) => {
 if (x() * 2 > 99) {
   console.log(5000);
 }
+
+console.log("yeeeeeeeeeeeeeeeeee");
