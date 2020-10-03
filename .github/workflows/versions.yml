@@ -1,0 +1,24 @@
+name: Manually tag a release
+on:
+  workflow_dispatch:
+    inputs:
+      branchToTag:
+        description: 'Branch to tag'
+        required: true
+      newTag:
+        description: 'New tag (ex: v1.0.0-alpha1)'
+        required: true
+jobs:
+  append newline:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      ref: ${{ github.event.inputs.branchToTag }}
+
+    - run: echo -e "* ${{ github.event.inputs.newTag }}\n" >> versions.md
+
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v4.1.2
+      with:
+        commit_message: Automated prettier formatting changes
+        branch: ${{ github.head_ref }}
