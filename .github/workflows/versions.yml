@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      ref: ${{ github.event.inputs.branchToTag }}
+      ref: refs/heads/${{ github.event.inputs.branchToTag }}
 
     - run: echo -e "* ${{ github.event.inputs.newTag }}\n" >> versions.md
 
